@@ -6,10 +6,10 @@ states = pd.read_csv('/Users/dori/Documents/Challenge/States.csv')
 states.head()
 
 credentials = {}  
-credentials['APP_KEY'] = 'DocHIzPvJzR9SHRlHCzAnN3Nj' 
-credentials['APP_SECRET'] =  'XENnUXjHFFvjbOOCl9JWSGkOdNUjYNXwxcsCusCGdjrxCtgzqX' 
-credentials['ACCESS_TOKEN'] = '4114800372-XjiEQLWVA4cVxdWad5EUgSYGwdj5qt0oCskyN5q' 
-credentials['ACCESS_SECRET'] = '892y9FVWYu70NptCY8wdZI05vvCC1bOOek4GjStXf24d'
+credentials['APP_KEY'] = 'KEY' 
+credentials['APP_SECRET'] =  'KEY' 
+credentials['ACCESS_TOKEN'] = 'TOKEN' 
+credentials['ACCESS_SECRET'] = 'TOKEN'
 
 with open("twitter_credentials.json", "w") as file:  
     json.dump(credentials, file)
