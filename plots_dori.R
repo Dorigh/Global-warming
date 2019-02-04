@@ -18,7 +18,7 @@ plot(st_geometry(sf_data), add = T, cex = 0.5, pch = 19)
 legend("bottomleft", legend = c("Democratic states", "Republican states"), fill = c("Deep Sky Blue","Violet"), cex = 0.8, pt.cex = 0.7, box.lty = 0, bg = rgb(0,0,0,0))
 
 # Analytical plots
-data <- read.csv("files/twitter_query.csv") 
+data <- read.csv("files/twitter_query.csv") # output of tweet.py
 data <- data[-c(1,4,5)]
 data <- data[order(data$state),]
 data$num <- 1
