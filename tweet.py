@@ -2,7 +2,7 @@ import pandas as pd
 import json
 from twython import Twython
 
-states = pd.read_csv('/Users/dori/Documents/Challenge/States.csv')
+states = pd.read_csv('files/States.csv')
 states.head()
 
 credentials = {}  
@@ -42,8 +42,7 @@ for i in range(0,len(geo)):
         dict_['retweet_num'].append(status['retweet_count'])
         dict_['state'].append(sta[i])
         dict_['party'].append(par[i])
-        
-        
+                
 df = pd.DataFrame(dict_)
 
 writer = pd.ExcelWriter('twitter_query.xlsx', engine = 'xlsxwriter')
