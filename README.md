@@ -10,3 +10,5 @@ The datas needed for this project where gathered from the available API from Twi
 
 <img src="files/preview.jpg" alt = "plot" align="center" style="width:20%; border:2.5px solid; margin:20px">
 
+
+<img src="files/preview2.jpg" alt = "plot2" align="center" style="width:20%; border:2.5px solid; margin:20px">
