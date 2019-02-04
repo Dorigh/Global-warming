@@ -12,3 +12,12 @@ The datas needed for this project where gathered from the available API from Twi
 
 
 <img src="files/preview2.jpg" alt = "plot2" align="center" style="width:100%; margin:20px">
+
+
+user | date | text | id	| favorite_count | state	| party
+--- | --- | --- | --- | --- | --- | ---
+SajeEagle |	Sat Feb 02 15:13:58 +0000 2019	| New Rule: #Climate Emergency Real Time with ...	| 1091716362039422976	| 0 |	Alabama |	R
+CatieGus |	Fri Feb 01 03:05:41 +0000 2019	| RT @GoGoGoDoc: Who said we have a problem with...	| 1091170694661054466	| 0	| Alabama	| R
+GoGoGoDoc	| Fri Feb 01 03:04:45 +0000 2019	| Who said we have a problem with global warming...	| 1091170461986185216	| 3	| Alabama |	R
+abigailjanette	| Fri Feb 01 00:07:02 +0000 2019 |	For those of you that don't read books: as the...	| 1091125736109498373	| 0	| Alabama	| R
+AbitaJiny	| Thu Jan 31 23:44:59 +0000 2019	| RT @Actor_Siddharth: This idiot can't spell wa...	| 1091120188861366273	| 0	| Alabama	| R
