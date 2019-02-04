@@ -2,8 +2,11 @@
 
 In recent decade, climate change became a topic of many political and social conversations. The principle of global warming and the heating up of the layers of atmosphere have been discussed a lot and public reactions  about its effects is increasing specially in social media. This project will discuss the social aspects of global warming by observing the users tweets in twitter including `#globalwarming`. Gathering information about the number of tweets in different states, the state political party and the popularity of tweets will provide us with informations we can use to analyze the social reaction to global warming.
 
-The datas needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). This data contains
-the coordinates of all the state capitals within the range of 100 mi in a circular area following with user id, date, text, favorite tweets number, state and the political party of the state, you can see as follows: 
+The datas needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). The following map shows the tweet areas for the current study.
+
+<img src="files/Rplot.jpeg" alt = "plot" align="center" style="width:100%; margin:20px">
+
+This data contains the coordinates of all the state capitals within the range of 100 mi in a circular areafollowing with user id, date, text, favorite tweets number, state and the political party of the state, you can see as follows: 
 
 user | date | text | id	| favorite_count | state	| party
 --- | --- | --- | --- | --- | --- | ---
@@ -19,10 +22,9 @@ The provided plots will show the followings:
   
   - The frequency of tweets in different days of the week. The focus was on this particular days because of the unexpected weather condition
 
-The plots are generarted by R and codes are availes [here](https://github.com/Dorigh/Global-warming/blob/master/plots_dori.R).
-
 <img src="files/preview.jpg" alt = "plot" align="center" style="width:100%; margin:20px">
 
 
 <img src="files/preview2.jpg" alt = "plot2" align="center" style="width:100%; margin:20px">
 
+All plots are generarted in R and codes are availes [here](https://github.com/Dorigh/Global-warming/blob/master/plots_dori.R).
