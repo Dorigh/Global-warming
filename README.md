@@ -17,8 +17,7 @@ The provided plots will show the followings:
 
   - The correlation between the number of tweets in each state and the political party of the state
   
-  - The frequency of tweets in different days of the week
-   The focus was on this particular days because of the unexpected weather condition. 
+  - The frequency of tweets in different days of the week. The focus was on this particular days because of the unexpected weather condition
   
 
 <img src="files/preview.jpg" alt = "plot" align="center" style="width:100%; margin:20px">
