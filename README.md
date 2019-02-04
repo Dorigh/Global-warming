@@ -2,11 +2,11 @@
 
 In recent decade, climate change became a topic of many political and social conversations. The principle of global warming and the heating up of the layers of atmosphere have been discussed a lot and public reactions  about its effects is increasing specially in social media. This project will discuss the social aspects of global warming by observing the users tweets in twitter including `#globalwarming`. Gathering information about the number of tweets in different states, the state political party and the popularity of tweets will provide us with informations we can use to analyze the social reaction to global warming.
 
-The datas needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). The following map shows the tweet areas for the current study.
+The datas needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). The tweets are collected from a 100 mi circular area of the state capitals across US. The following map shows the tweet areas for the current study.
 
 <img src="files/Rplot.jpeg" alt = "plot" align="center" style="width:100%; margin:20px">
 
-This data contains the coordinates of all the state capitals within the range of 100 mi in a circular areafollowing with user id, date, text, favorite tweets number, state and the political party of the state, you can see as follows: 
+This data contains the coordinates of all the state capitals within the range of 100 mi in a circular area following with user id, date, text, favorite tweets number, state and the political party of the state, you can see as follows: 
 
 user | date | text | id	| favorite_count | state	| party
 --- | --- | --- | --- | --- | --- | ---
@@ -18,7 +18,7 @@ AbitaJiny	| Thu Jan 31 23:44:59 +0000 2019	| RT @Actor_Siddharth: This idiot can
 
 The provided plots will show the followings: 
 
-  - The correlation between the number of tweets in each state and the political party of the state
+  - The correlation between the number of tweets in each state and the political party of the state. Blue and red bars are corresponding to democratic and republican states respectively
   
   - The frequency of tweets in different days of the week. The focus was on this particular days because of the unexpected weather condition
 
