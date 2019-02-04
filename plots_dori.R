@@ -6,7 +6,7 @@ states_map <- us_map[which(!us_map$STATE_ABBR %in% c("HI", "AK")),]
 st_demo <- c("CA", "CO", "CT", "DE", "IL", "ME", "MD", "MA", "MN", "NV", "NH", "NJ", "NY", "OR", "RI", "VA","WA")
 states_demo <- us_map[which(us_map$STATE_ABBR %in% st_demo),]
 
-data <- read.csv("/Users/dori/Documents/Challenge/States.csv")
+data <- read.csv("files/States.csv")
 sf_data<- st_as_sf(data, coords = c("Lon", "Lat"))
 buffer <- st_buffer(sf_data, dist = 1.6) # unit 100km
 
