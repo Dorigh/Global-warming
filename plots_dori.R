@@ -1,7 +1,8 @@
+# States.csv, state.shp, and twitter_query.csv files are available in the files directory.
 library(sf)
-us_map <- st_read("files/states.shp")
 
 # Tweet area
+us_map <- st_read("files/states.shp")
 states_map <- us_map[which(!us_map$STATE_ABBR %in% c("HI", "AK")),]
 st_demo <- c("CA", "CO", "CT", "DE", "IL", "ME", "MD", "MA", "MN", "NV", "NH", "NJ", "NY", "OR", "RI", "VA","WA")
 states_demo <- us_map[which(us_map$STATE_ABBR %in% st_demo),]
@@ -33,5 +34,3 @@ colnames(data_dy) <- c("day", "number")
 par(mar = c(5,4,4,2))
 data_dy <- data.frame(number = c(64, 77, 95, 427, 715, 543, 554, 401), day = c("Jan 26", "Jan 27", "Jan 28", "Jan 29", "Jan 30", "Jan 31", "Feb 01", "Feb 02")) 
 barplot(data_dy$number, names.arg = data_dy$day, col = "Deep Sky Blue", main = "Number of Tweets per day", density = 35, las = 2)
-
-
