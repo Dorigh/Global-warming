@@ -1,5 +1,5 @@
 library(sf)
-us_map <- st_read("/Users/dori/Documents/Challenge/states.shp")
+us_map <- st_read("files/states.shp")
 
 # Tweet area
 states_map <- us_map[which(!us_map$STATE_ABBR %in% c("HI", "AK")),]
@@ -10,14 +10,14 @@ data <- read.csv("/Users/dori/Documents/Challenge/States.csv")
 sf_data<- st_as_sf(data, coords = c("Lon", "Lat"))
 buffer <- st_buffer(sf_data, dist = 1.6) # unit 100km
 
-plot(st_geometry(states_map), col ="Violet", main = "Tweets area")
+plot(st_geometry(states_map), col = "Violet", main = "Tweets area")
 plot(st_geometry(states_demo), add = T, col = "Deep Sky Blue")
 plot(st_geometry(buffer), add = T, col = "snow")
 plot(st_geometry(sf_data), add = T, cex = 0.5, pch = 19)
 legend("bottomleft", legend = c("Democratic states", "Republican states"), fill = c("Deep Sky Blue","Violet"), cex = 0.8, pt.cex = 0.7, box.lty = 0, bg = rgb(0,0,0,0))
 
 # Analytical plots
-data <- read.csv("/Users/dori/Documents/Challenge/twitter_query.csv") 
+data <- read.csv("files/twitter_query.csv") 
 data <- data[-c(1,4,5)]
 data <- data[order(data$state),]
 data$num <- 1
