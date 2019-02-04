@@ -46,7 +46,7 @@ for i in range(0,len(geo)):
         
 df = pd.DataFrame(dict_)
 
-writer = pd.ExcelWriter('twitter_quary.xlsx', engine = 'xlsxwriter')
+writer = pd.ExcelWriter('twitter_query.xlsx', engine = 'xlsxwriter')
 df.to_excel(writer, sheet_name = 'Sheet1')
 writer.save()
 
