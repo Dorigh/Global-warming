@@ -8,5 +8,5 @@ The datas needed for this project where gathered from the available API from Twi
   - The frequency of tweets in different days of the week
   
 
-<img src="files/preview.svg" alt = "plot" align="center" style="width:25%; border:2.5px solid; margin-right:20px; margin-bottom:10px;">
+<img src="files/preview.jpg" alt = "plot" align="center" style="width:20%; border:2.5px solid; margin:20px">
 
