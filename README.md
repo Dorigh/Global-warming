@@ -2,7 +2,7 @@
 
 In recent decade, climate change became a topic of many political and social conversations. The principle of global warming have been discussed a lot and public reactions to its effects is significantly increasing specially in social media. This project will discuss the social aspects of global warming by observing the users tweets in twitter including `#globalwarming`. Gathering information about the number of tweets in different states, the political party of each state and the popularity of tweets will provide us with informations we can use to analyze the social reaction to global warming.
 
-The datas needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). The tweets are collected from a 100 mi circular area of the state capitals across US. The following map shows the tweet areas for the current study.
+The data needed for this project where gathered from the available API from Twitter using Python and JSON (Python codes are availabe [here](https://github.com/Dorigh/Global-warming/blob/master/tweet.py)). The tweets are collected from a 100 mi circular area of the state capitals across the US. The following map shows the tweets area for the current study.
 
 <img src="files/Rplot.jpeg" alt = "plot" align="center" style="width:100%; margin:20px">
 
