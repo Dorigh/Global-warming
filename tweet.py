@@ -1,3 +1,4 @@
+import datetime as dt
 import pandas as pd
 import json
 from twython import Twython
@@ -28,9 +29,9 @@ par = states['Political Party']
 dict_ = {'user': [], 'date': [], 'text': [], 'id':[], 'favorite_count': [], 'retweet_num': [], 'state': [], 'party': []} 
 for i in range(0,len(geo)):
     query = {'q': '#globalwarming', 
-             'count': '200',
+             'count': '100',
              'lang': 'en',
-             'until': '2019-02-28',
+             'until': dt.datetime.today().strftime('%Y-%m-%d'),
              'geocode': geo[i]}
     
     for status in python_tweets.search(**query)['statuses']:  
@@ -44,5 +45,5 @@ for i in range(0,len(geo)):
         dict_['party'].append(par[i])
                 
 df = pd.DataFrame(dict_)
-df.to_csv('twitter_query_28Feb.csv')
+df.to_csv('twitter_query.csv')
 
