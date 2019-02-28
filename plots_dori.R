@@ -2,7 +2,7 @@ library(sf)
 library(maps)
 
 # Tweet area
-data_states <- read.csv("/files/States.csv")
+data_states <- read.csv("files/States.csv")
 sf_data<- st_as_sf(data_states, coords = c("Lon", "Lat"))
 buffer <- st_buffer(sf_data, dist = 1.6) # unit 100km
 st_demo <- c("CA", "CO", "CT", "DE", "IL", "ME", "MD", "MA", "MN", "NV", "NH", "NJ", "NY", "OR", "RI", "VA","WA")
@@ -16,7 +16,7 @@ title("Tweets Area", cex.main = 0.9)
 legend("bottomleft", legend = c("Democratic states", "Republican states"), fill = c("Deep Sky Blue","Violet"), cex = 0.8, pt.cex = 0.7, box.lty = 0, bg = rgb(0,0,0,0))
 
 # Analytical plots
-data <- read.csv("/files/twitter_query_28Feb.csv") # output of tweet.py
+data <- read.csv("files/twitter_query.csv") # output of tweet.py
 data <- data[-c(1,4,5)]
 data <- data[order(data$state),]
 data$num <- 1
