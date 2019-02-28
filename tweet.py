@@ -30,7 +30,7 @@ for i in range(0,len(geo)):
     query = {'q': '#globalwarming', 
              'count': '200',
              'lang': 'en',
-             'until': '2019-02-03',
+             'until': '2019-02-28',
              'geocode': geo[i]}
     
     for status in python_tweets.search(**query)['statuses']:  
@@ -44,8 +44,5 @@ for i in range(0,len(geo)):
         dict_['party'].append(par[i])
                 
 df = pd.DataFrame(dict_)
-
-writer = pd.ExcelWriter('twitter_query.xlsx', engine = 'xlsxwriter')
-df.to_excel(writer, sheet_name = 'Sheet1')
-writer.save()
+df.to_csv('twitter_query_28Feb.csv')
 
