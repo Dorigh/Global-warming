@@ -3,7 +3,7 @@ import pandas as pd
 import json
 from twython import Twython
 
-states = pd.read_csv('files/States.csv')
+states = pd.read_csv('./files/States.csv')
 states.head()
 
 credentials = {}  
@@ -45,5 +45,4 @@ for i in range(0,len(geo)):
         dict_['party'].append(par[i])
                 
 df = pd.DataFrame(dict_)
-df.to_csv('twitter_query.csv')
-
+df.to_csv('./twitter_query.csv')
